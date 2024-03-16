@@ -1,0 +1,110 @@
+:root {
+  --primary-blue: #8064a2;
+}
+
+.nav-container {
+  height: 5rem;
+  /* width: 90rem; */
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+  font-size: 0.8rem;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-container img {
+  height: 4rem;
+  width: 18rem;
+  cursor: pointer;
+}
+
+.nav-container .input-group input {
+  height: 2.5rem;
+  width: 16rem;
+  border: 1px solid rgb(159, 158, 158);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+}
+.nav-container .input-group button {
+  height: 2.5rem;
+  width: 3rem;
+  border: none;
+  background-color: var(--primary-blue);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.nav-container .input-group button:hover {
+  background-color: #734da2;
+}
+
+.nav-container nav {
+  height: 5rem;
+  width: 32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container nav > * {
+  cursor: pointer;
+  font-weight: 500;
+}
+.nav-container nav i {
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+}
+.nav-container nav .explore {
+  position: relative;
+  width: 6rem;
+  height: 1.5rem;
+}
+.nav-container nav .explore ul {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  display: none;
+  height: 13rem;
+  width: 13rem;
+  list-style: none;
+  color: #6d747a;
+  box-shadow: 0 0 1px 0 rgb(0, 0, 0, 0.7);
+  overflow: hidden;
+  z-index: 2;
+}
+.nav-container nav .explore ul li {
+  border-bottom: 1px solid #c7c4c4;
+  padding: 10px;
+}
+
+/*
+hover effect for drop-down 
+ */
+.nav-container nav .explore:hover ul {
+  display: block;
+}
+.nav-container nav .explore:hover ul li:hover {
+  background-color: #cecdcf;
+}
+.nav-container nav :where(.explore, .hobbies) {
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container nav :where(.explore, .hobbies) i {
+  padding: 0 5px 0 5px;
+}
+.nav-container nav :where(.explore, .hobbies) .bi-chevron-down {
+  font-size: 0.8rem;
+}
+.nav-container nav button {
+  padding: 7px 15px;
+  border: 1px solid var(--primary-blue);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--primary-blue);
+}
