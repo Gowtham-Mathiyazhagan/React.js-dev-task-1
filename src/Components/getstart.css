@@ -1,12 +1,10 @@
 .getstart-component {
   height: 35rem;
-  width: 100%;
   background-color: #f2f8fa;
-  padding: 25px;
 }
 .getstart-component section {
   height: 100%;
-  width: 100%;
+  /* width: 63rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -16,3 +16,8 @@ html {
 :root {
   --primary-blue: #8064a2;
 }
+.app-component {
+  min-width: 900px;
+  display: flex;
+  justify-content: center;
+}
