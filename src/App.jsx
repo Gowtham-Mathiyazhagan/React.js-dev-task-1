@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Head from './Components/Head'
 import Group from './Components/Group'
+import Add from './Components/Add'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
 <Navbar/>
 <Head/>
 <Group/>
+<Add/>
 </>
     )
 }

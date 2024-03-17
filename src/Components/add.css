@@ -1,0 +1,46 @@
+.add-component {
+  height: 30rem;
+  background-color: #f2f8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-component section {
+  height: 17rem;
+  width: 67rem;
+  background-color: #ffffff;
+  border: 1px solid #b7b6b6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+.add-component .title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.add-component .title img {
+  height: 2rem;
+  width: 2rem;
+}
+.add-component .title h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.add-component p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.add-component section button {
+	height: 2.5rem;
+	width: 8rem;
+	background-color: #ffffff;
+	border-radius: 8px;
+	border: 1px solid #8064a2;
+	color: #8064a2;
+	font-weight: 600;
+	font-size: 0.8rem;
+  }
