@@ -44,6 +44,8 @@
   color: #8064a2;
   font-weight: 600;
   font-size: 0.8rem;
+	cursor: pointer;
+
 }
 .group-component section .white-img {
   display: none;

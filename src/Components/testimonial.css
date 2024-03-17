@@ -1,0 +1,112 @@
+.testimonial-component {
+  height: 42rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-component section {
+  height: 29rem;
+  width: 67rem;
+  background-color: #f7f5f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+.testimonial-component section .title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.testimonial-component section .title img {
+  height: 2rem;
+  width: 2rem;
+}
+.testimonial-component section .title h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.testimonial-component section p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.testimonial-component .play-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial-component .play-list .play {
+  height: 6rem;
+  width: 43rem;
+  background-color: #ccc1da;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+}
+.testimonial-component .play-list .play i {
+  font-size: 2.1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.testimonial-component .play-list .play div:nth-child(2) {
+  display: inline-block;
+  height: 2px;
+  width: 29rem;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.testimonial-component .play-list .play div > span {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #8064a2;
+}
+.testimonial-component .play-list .play span {
+  color: #8064a2;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.testimonial-component .play-list .play .img {
+  position: relative;
+  height: 3.7rem;
+  width: 3.7rem;
+}
+.testimonial-component .play-list .play .img img {
+  height: 100%;
+  width: 100%;
+}
+.testimonial-component .play-list .play .img i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.2rem;
+}
+.testimonial-component .play-list .author {
+  height: 6.5rem;
+  width: 18rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.testimonial-component .play-list .author img {
+  height: 5.25rem;
+  width: 5.25rem;
+}
+.testimonial-component .play-list .author h6 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #8064a2;
+}
+.testimonial-component .play-list .author p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #0096c8;
+}

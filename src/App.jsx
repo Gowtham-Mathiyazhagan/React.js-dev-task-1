@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar'
 import Head from './Components/Head'
 import Group from './Components/Group'
 import Add from './Components/Add'
+import Testimonial from './Components/Testimonial'
+import Getstart from './Components/Getstart'
 
 const App = () => {
   return (
@@ -12,6 +14,9 @@ const App = () => {
 <Head/>
 <Group/>
 <Add/>
+<Testimonial/>
+<Getstart/>
+
 </>
     )
 }
