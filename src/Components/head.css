@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  gap: 0.4rem;
+  gap: 2rem;
 }
 
 .head-container .left {
@@ -28,7 +28,7 @@
 .head-container .left .title-para p {
   font-size: 0.8rem;
 }
-.head-container .left .title-para img {
+.head-container .left img {
   height: 13.5rem;
   width: 100%;
 }
@@ -43,7 +43,7 @@
 .head-container .right .head {
   font-size: 1.1rem;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   font-weight: 600;
   font-size: 0.9rem;
   color: #939ca3;
@@ -90,13 +90,15 @@
 
 .head-container .right .email-section input {
   width: 100%;
-  padding: 10px 0;
+  padding: 0.5rem 0;
   margin-bottom: 1.25rem;
   border-radius: 8px;
   border: 1px solid black;
-  padding-left: 10px;
+  padding-left: 0.6rem;
 }
-
+.head-container .right .email-section input::placeholder {
+  font-size: 0.9rem;
+}
 .head-container .right .remember {
   display: flex;
   justify-content: space-between;
@@ -141,4 +143,42 @@
   background-color: var(--primary-blue);
   color: #ffffff;
   transition: all 0.3s linear;
+}
+.head-container .mobile {
+  display: none;
+}
+@media only screen and (max-width: 680px) {
+  .head-container {
+    /* min-height: 38rem; */
+    height: 76.6rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .head-container .right {
+    height: 25rem;
+    width: 26.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 0px;
+  }
+  .head-container .left {
+    height: 20rem;
+    width: 44rem;
+  }
+  .head-container .left img {
+    display: none;
+  }
+  .head-container .mobile {
+    display: block;
+    height: 13.5rem;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .head-container {
+    height: 75rem;
+  }
 }

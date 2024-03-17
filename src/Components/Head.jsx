@@ -96,6 +96,7 @@ const Head = () => {
           Agree and Continue
         </button>
       </div>
+      <img className="mobile" src={group} alt="group" />
     </div>
   );
 };

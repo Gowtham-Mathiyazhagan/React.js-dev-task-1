@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 25px;
+  padding: 1.5rem;
   border: 1px solid #b7b6b6;
   border-radius: 8px;
   transition: all 0.3s linear;
@@ -21,7 +21,7 @@
 
 .group-component section .title {
   display: flex;
-  gap: 10px;
+  gap: 0.7rem;
   align-items: center;
 }
 .group-component section .title img {
@@ -44,8 +44,7 @@
   color: #8064a2;
   font-weight: 600;
   font-size: 0.8rem;
-	cursor: pointer;
-
+  cursor: pointer;
 }
 .group-component section .white-img {
   display: none;
@@ -70,4 +69,17 @@
 }
 .group-component section:nth-child(4):hover {
   background-color: #0096c8;
+}
+
+@media only screen and (max-width: 680px) {
+ 
+  .group-component {
+    height: 75rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+  }
+  .group-component section {
+    align-items: center;
+    text-align: center;
+  }
 }

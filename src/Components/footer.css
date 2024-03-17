@@ -35,14 +35,22 @@
   cursor: pointer;
   font-size: 1.2rem;
 }
+.footer-component .contant .group-two div {
+  display: flex;
+  align-items: center;
+}
 .footer-component .contant .group-two div input {
-  padding: 0.5rem 2rem;
+  height: 2.5rem;
+  width: 16rem;
   border: 1px solid rgb(196, 195, 195);
   border-right: none;
   outline: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .footer-component .contant .group-two div button {
-  padding: 0.5rem;
+  height: 2.5rem;
+  width: 3rem;
   border: none;
   cursor: pointer;
   border: 1px solid rgb(196, 195, 195);
@@ -51,6 +59,8 @@
   font-size: 0.8rem;
   font-weight: 700;
   color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .footer-component footer {
   font-weight: 500;
@@ -59,4 +69,23 @@
   bottom: 0;
   left: 40%;
   transform: translateY(-50%);
+}
+@media only screen and (max-width: 680px) {
+  .footer-component {
+    min-height: 50rem;
+  }
+  .footer-component .contant {
+    flex-direction: column;
+  }
+  .footer-component .contant .group-two div input {
+    width: 100%;
+  }
+  .footer-component .contant .group-two div button {
+    width: 4rem;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .footer-component {
+    padding: 20px;
+  }
 }

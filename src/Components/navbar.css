@@ -85,6 +85,8 @@ hover effect for drop-down
  */
 .nav-container nav .explore:hover ul {
   display: block;
+  z-index: 50;
+  background-color: #e7e8e8;
 }
 .nav-container nav .explore:hover ul li:hover {
   background-color: #cecdcf;
@@ -102,9 +104,26 @@ hover effect for drop-down
   font-size: 0.8rem;
 }
 .nav-container nav button {
-  padding: 7px 15px;
+  padding: 0.4rem 0.9rem;
   border: 1px solid var(--primary-blue);
   border-radius: 8px;
   background-color: #ffffff;
   color: var(--primary-blue);
+  font-size: 0.9rem;
+}
+.nav-container .mobile {
+  display: none;
+  gap: 10px;
+}
+.nav-container .mobile i {
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 680px) {
+  .nav-container :is(.input-group, .desktop) {
+    display: none;
+  }
+  .nav-container .mobile {
+    display: flex;
+    justify-content: space-around;
+  }
 }

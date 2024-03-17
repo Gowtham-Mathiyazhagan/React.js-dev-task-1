@@ -1,6 +1,7 @@
 .getstart-component {
   height: 35rem;
-  background-color: #f2f8fa;
+  background-color: #f4f6f7;
+  max-width: 75rem;
 }
 .getstart-component section {
   height: 100%;
@@ -8,6 +9,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.getstart-component .title-btn {
+  align-self: flex-start;
 }
 .getstart-component section .title-btn h4 {
   font-weight: 500;
@@ -29,4 +35,23 @@
   font-weight: 600;
   font-size: 0.8rem;
   color: #ffffff;
+}
+.getstart-component section img {
+  height: 19rem;
+  max-width: 55rem;
+}
+@media only screen and (max-width: 680px) {
+  .getstart-component {
+    max-width: 65rem;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .getstart-component {
+    width: 50rem;
+    padding: 50px;
+  }
+  .getstart-component section img {
+    height: 19rem;
+    max-width: 50rem;
+  }
 }

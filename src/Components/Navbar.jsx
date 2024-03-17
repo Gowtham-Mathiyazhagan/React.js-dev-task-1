@@ -12,7 +12,7 @@ const Navbar = () => {
             <i class="bi bi-search"></i>
           </button>
         </div>
-        <nav>
+        <nav className="desktop">
           <div className="explore">
             <i class="bi bi-compass-fill"></i>
             Explore
@@ -34,6 +34,11 @@ const Navbar = () => {
           <i class="bi bi-bell-fill"></i>
           <i class="bi bi-cart-fill"></i>
           <button>Sign In</button>
+        </nav>
+        <nav className="mobile">
+          <i class="bi bi-search"></i>
+          <i class="bi bi-bell-fill"></i>
+          <i class="bi bi-list"></i>
         </nav>
       </div>
     </>
