@@ -1,0 +1,71 @@
+.group-component {
+  height: 45rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  padding: 0 3rem 3rem 3rem;
+}
+.group-component section {
+  height: 16rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+}
+
+.group-component section .title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.group-component section .title img {
+  height: 2rem;
+  width: 2rem;
+}
+.group-component section .title h4 {
+  font-size: 1.2rem;
+}
+.group-component section p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.group-component section button {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #8064a2;
+  color: #8064a2;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.group-component section .white-img {
+  display: none;
+}
+.group-component section:hover {
+  color: #ffffff;
+}
+.group-component section:hover .white-img {
+  display: block;
+}
+.group-component section:hover .title :first-child {
+  display: none;
+}
+.group-component section:nth-child(1):hover {
+  background-color: #8064a2;
+}
+.group-component section:nth-child(2):hover {
+  background-color: #77933c;
+}
+.group-component section:nth-child(3):hover {
+  background-color: #c0504d;
+}
+.group-component section:nth-child(4):hover {
+  background-color: #0096c8;
+}
